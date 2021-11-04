@@ -16,7 +16,7 @@ class Question extends Component{
         
         return(
 
-            <Link to={`/question/${id}`} className='question'>
+            <Link to={`/questions/${id}`} className='question'>
                 <img
                 src={users.filter(user=>(user.id===Question.author))[0].avatarURL}
                 alt={`avatar of:${users.filter(user=>(user.id===Question.author))[0].id}`}
