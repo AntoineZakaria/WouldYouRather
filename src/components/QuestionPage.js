@@ -1,7 +1,8 @@
 import React,{Component, Fragment} from "react";
 import { connect } from "react-redux";
 import Question from "./Question";
-
+import PageNotFound from "./pageNotFound";
+import ProtectedRoute from "../protectedRoutes";
 import { handleAnswerQuestion } from "../actions/questions";
 
 class QuestionPage extends Component{
@@ -62,6 +63,12 @@ class QuestionPage extends Component{
 
     render(){
         const {id,users,questions,authedUser} =this.props
+
+        if(questions[id]===undefined)
+        {
+            return <ProtectedRoute  component={PageNotFound}/>
+
+        }
         
         return(
             <div >

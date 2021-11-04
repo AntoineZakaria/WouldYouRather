@@ -41,7 +41,7 @@ class App extends Component {
 
         <Switch>
         <ProtectedRoute path ='/' exact component={Dashboard}/>
-        <ProtectedRoute path ='/new'  component={NewQuestion}/>
+        <ProtectedRoute path ='/add'  component={NewQuestion}/>
         <ProtectedRoute path ='/question/:id'  component={QuestionPage}/>
         <ProtectedRoute path ='/leaderboard'  component={Leaderboard}/>
         

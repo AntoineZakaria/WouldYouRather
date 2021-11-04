@@ -41,7 +41,7 @@ class Navigation extends Component{
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink to ='/new' exact activeClassName='active'>
+                            <NavLink to ='/add' exact activeClassName='active'>
                                 New question
                             </NavLink>
         
